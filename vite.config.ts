@@ -9,6 +9,19 @@ const base = process.env.VITE_BASE ?? '/'
 export default defineConfig({
   base,
   plugins: [react(), tailwindcss()],
+  /*
+   * Fail on a taken port instead of quietly moving to the next one.
+   *
+   * Vite's default is to increment until it finds a free port, which means a
+   * second `pnpm dev` does not tell you the first one is still running — it
+   * just starts another server. Each one holds a module graph and a watcher
+   * over the whole project, so a long session silently accumulates hundreds of
+   * megabytes per forgotten instance. On a machine with no swap that margin is
+   * the difference between slow and frozen. Refusing to start is the honest
+   * behaviour: it makes the stale server visible so it can be stopped.
+   */
+  server: { port: 5173, strictPort: true },
+  preview: { port: 4173, strictPort: true },
   resolve: {
     alias: {
       '@domain': fileURLToPath(new URL('./src/domain', import.meta.url)),
