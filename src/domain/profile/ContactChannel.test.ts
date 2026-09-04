@@ -18,7 +18,7 @@ describe('ContactChannel', () => {
     expect(() =>
       ContactChannel.create({ kind: 'email', label: 'x', href: 'https://example.com' }),
     ).toThrow(DomainError)
-    expect(() => ContactChannel.create({ kind: 'phone', label: 'x', href: '+503 7362 1495' })).toThrow(
+    expect(() => ContactChannel.create({ kind: 'phone', label: 'x', href: '+1 555 000 0000' })).toThrow(
       DomainError,
     )
     expect(() => ContactChannel.create({ kind: 'github', label: 'x', href: 'antonio0x' })).toThrow(
@@ -28,7 +28,7 @@ describe('ContactChannel', () => {
 
   it('accepts a valid href for every kind', () => {
     expect(() =>
-      ContactChannel.create({ kind: 'phone', label: 'x', href: 'tel:+50373621495' }),
+      ContactChannel.create({ kind: 'phone', label: 'x', href: 'tel:+15550000000' }),
     ).not.toThrow()
     expect(() =>
       ContactChannel.create({ kind: 'github', label: 'x', href: 'https://github.com/antonio0x' }),
