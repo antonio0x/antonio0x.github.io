@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+
+# Local agent tooling cache, not part of the site
+.atl/
+
+# The served copy of the CV lives in public/. This loose root copy is a
+# byte-identical duplicate, so it is not tracked.
+/AntonioQuintanilla-CV.pdf
