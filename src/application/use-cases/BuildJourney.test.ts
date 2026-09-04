@@ -14,7 +14,7 @@ import type { ChapterCopy } from '@domain/ports/JourneyCopyRepository'
 import { buildJourney } from './BuildJourney'
 
 const copy = (): ChapterCopy[] =>
-  CHAPTER_IDS.map((id) => ({ id, eyebrow: `E ${id}`, title: `T ${id}`, body: `B ${id}` }))
+  CHAPTER_IDS.map((id) => ({ id, title: `T ${id}`, body: `B ${id}` }))
 
 const profileWith = (overrides: Partial<Parameters<typeof Profile.create>[0]> = {}) =>
   Profile.create({

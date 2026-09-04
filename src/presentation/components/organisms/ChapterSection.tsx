@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react'
 import type { Chapter } from '@domain/narrative/Chapter'
-import { Eyebrow } from '../atoms/Eyebrow'
 
 export interface ChapterSectionProps {
   chapter: Chapter
@@ -31,8 +30,6 @@ export function ChapterSection({ chapter, children, variant = 'standard' }: Chap
     >
       <div className="mx-auto w-full max-w-6xl">
         <div className="max-w-3xl">
-          <Eyebrow>{chapter.eyebrow}</Eyebrow>
-
           <h2
             id={headingId}
             className={variant === 'hero' ? 'text-display leading-[0.95]' : 'text-chapter'}

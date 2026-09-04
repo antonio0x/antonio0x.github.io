@@ -2,55 +2,46 @@
   "es": [
     {
       "id": "intro",
-      "eyebrow": "Nodo cero",
       "title": "Antonio Quintanilla",
       "body": "Ingeniero en Sistemas y Redes Informáticas. Trabajo donde el software se encuentra con la infraestructura que lo sostiene. Esta es la red que fui construyendo."
     },
     {
       "id": "origin",
-      "eyebrow": "Capítulo 01 · Origen",
       "title": "Donde empieza la red",
       "body": "El Salvador. Seis años de Ingeniería en Sistemas y Redes Informáticas en la Universidad Gerardo Barrios. No aprendí a programar antes de entender qué había debajo: el sistema operativo, la red, la máquina."
     },
     {
       "id": "foundations",
-      "eyebrow": "Capítulo 02 · Fundamentos",
       "title": "Lo que estudié por mi cuenta",
       "body": "La carrera da los cimientos; el oficio se construye después. Git, Docker, Linux, el stack de Laravel y Vue, las bases de datos NoSQL. Cada nodo es una decisión de seguir aprendiendo sin que nadie lo pidiera."
     },
     {
       "id": "craft",
-      "eyebrow": "Capítulo 03 · El oficio",
       "title": "Donde se puso a prueba",
       "body": "Soporte técnico y desarrollo web sobre sistemas reales, con usuarios reales y problemas que no esperan. Administración de sistemas, redes y facturación electrónica. Acá la teoría se vuelve responsabilidad."
     },
     {
       "id": "stack",
-      "eyebrow": "Capítulo 04 · El stack",
       "title": "Las herramientas",
       "body": "Sin barras de porcentaje. Tres niveles honestos: lo que uso a diario, lo que manejo con soltura y lo que conozco. Los nodos más grandes son los que más peso cargan."
     },
     {
       "id": "workshop",
-      "eyebrow": "Capítulo 05 · El taller",
       "title": "El entorno, configurado a mano",
       "body": "Configurar el sistema propio no es un pasatiempo aparte del trabajo: es la misma disciplina aplicada a la máquina donde el trabajo ocurre. Cada pieza acá está elegida y justificada, versionada en Git y reproducible en una máquina nueva. Un entorno que sabés reconstruir es un entorno que entendés."
     },
     {
       "id": "work",
-      "eyebrow": "Capítulo 06 · Lo construido",
       "title": "Proyectos",
       "body": "Trabajo publicado, no capturas de pantalla. Cada nodo enlaza al código y se conecta con las tecnologías que realmente se usaron."
     },
     {
       "id": "horizon",
-      "eyebrow": "Capítulo 07 · Hacia dónde",
       "title": "Lo que viene",
       "body": "Servicios y soluciones en la nube. La continuación natural de una carrera que empezó en sistemas y redes: la misma infraestructura, ahora distribuida."
     },
     {
       "id": "contact",
-      "eyebrow": "Capítulo 08 · Contacto",
       "title": "Conectemos",
       "body": "La red está completa. Si algo de lo que viste encaja con lo que necesitás, escribime."
     }
@@ -58,55 +49,46 @@
   "en": [
     {
       "id": "intro",
-      "eyebrow": "Node zero",
       "title": "Antonio Quintanilla",
       "body": "Computer Systems and Networks engineer. I work where software meets the infrastructure that keeps it running. This is the network I have been building."
     },
     {
       "id": "origin",
-      "eyebrow": "Chapter 01 · Origin",
       "title": "Where the network starts",
       "body": "El Salvador. Six years of Computer Systems and Networks Engineering at Universidad Gerardo Barrios. I did not learn to code before understanding what sits underneath it: the operating system, the network, the machine."
     },
     {
       "id": "foundations",
-      "eyebrow": "Chapter 02 · Foundations",
       "title": "What I studied on my own",
       "body": "A degree lays the foundations; the craft is built afterwards. Git, Docker, Linux, the Laravel and Vue stack, NoSQL databases. Every node here is a decision to keep learning with nobody asking."
     },
     {
       "id": "craft",
-      "eyebrow": "Chapter 03 · The craft",
       "title": "Where it was tested",
       "body": "Technical support and web development on live systems, with real users and problems that do not wait. Systems administration, networking and electronic invoicing. This is where theory turns into responsibility."
     },
     {
       "id": "stack",
-      "eyebrow": "Chapter 04 · The stack",
       "title": "The tools",
       "body": "No percentage bars. Three honest levels: what I use daily, what I handle comfortably, and what I know. The larger nodes carry the most weight."
     },
     {
       "id": "workshop",
-      "eyebrow": "Chapter 05 · The workshop",
       "title": "An environment configured by hand",
       "body": "Configuring your own system is not a hobby sitting beside the work: it is the same discipline applied to the machine the work happens on. Every piece here was chosen and justified, kept under version control, and is reproducible on a new machine. An environment you can rebuild is an environment you understand."
     },
     {
       "id": "work",
-      "eyebrow": "Chapter 06 · Built",
       "title": "Projects",
       "body": "Published work, not screenshots. Every node links to the code and connects to the technologies actually used."
     },
     {
       "id": "horizon",
-      "eyebrow": "Chapter 07 · Ahead",
       "title": "What comes next",
       "body": "Cloud services and solutions. The natural continuation of a career that started in systems and networks: the same infrastructure, now distributed."
     },
     {
       "id": "contact",
-      "eyebrow": "Chapter 08 · Contact",
       "title": "Let's connect",
       "body": "The network is complete. If something you saw fits what you need, get in touch."
     }

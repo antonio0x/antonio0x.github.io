@@ -6,7 +6,7 @@ import { Journey } from './Journey'
 import { NarrativeNode } from './NarrativeNode'
 
 const chapter = (id: string, index: number) =>
-  Chapter.create({ id, index, eyebrow: `Ch ${index}`, title: id, body: '', focusNodeId: null })
+  Chapter.create({ id, index, title: id, body: '', focusNodeId: null })
 
 const node = (id: string, chapterId: string) =>
   NarrativeNode.create({ id, chapterId, kind: 'milestone', label: id })
@@ -92,7 +92,6 @@ describe('Journey invariants', () => {
           Chapter.create({
             id: 'intro',
             index: 0,
-            eyebrow: '',
             title: 'Intro',
             body: '',
             focusNodeId: 'b',

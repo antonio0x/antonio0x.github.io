@@ -5,7 +5,6 @@ import { Chapter } from './Chapter'
 const validProps = {
   id: 'origin',
   index: 1,
-  eyebrow: 'Capítulo 01',
   title: 'Origen',
   body: 'El Salvador. Ingeniería en Sistemas y Redes.',
   focusNodeId: 'origin-root',
@@ -17,7 +16,6 @@ describe('Chapter', () => {
 
     expect(chapter.id).toBe('origin')
     expect(chapter.index).toBe(1)
-    expect(chapter.eyebrow).toBe('Capítulo 01')
     expect(chapter.title).toBe('Origen')
     expect(chapter.focusNodeId).toBe('origin-root')
   })

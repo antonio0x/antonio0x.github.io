@@ -4,7 +4,6 @@ export interface ChapterProps {
   readonly id: string
   /** Position in the story. Must run contiguously from 0 across the journey. */
   readonly index: number
-  readonly eyebrow: string
   readonly title: string
   readonly body: string
   /**
@@ -20,7 +19,6 @@ export class Chapter {
   private constructor(
     readonly id: string,
     readonly index: number,
-    readonly eyebrow: string,
     readonly title: string,
     readonly body: string,
     readonly focusNodeId: string | null,
@@ -32,7 +30,6 @@ export class Chapter {
     return new Chapter(
       requireText(props.id, 'Chapter id'),
       requireNonNegativeInteger(props.index, 'Chapter index'),
-      props.eyebrow,
       requireText(props.title, 'Chapter title'),
       props.body,
       props.focusNodeId,

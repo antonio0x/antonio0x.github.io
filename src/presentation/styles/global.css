@@ -258,23 +258,8 @@
 
 @layer components {
   /*
-   * Condensed, not monospaced. A small tracked label is a typographic register,
-   * and reaching for a monospace face to say "technical" is a costume — the
-   * mono here is reserved for things that are actually data.
-   */
-  .eyebrow {
-    font-stretch: var(--width-label);
-    font-size: 0.8125rem;
-    font-weight: 640;
-    letter-spacing: 0.14em;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: var(--color-signal);
-  }
-
-  /*
-   * A small tracked label. Same condensed register as the eyebrow, but it takes
-   * its colour from where it sits instead of always claiming the signal.
+   * A small tracked label: category names, chips, the language toggle. Condensed
+   * rather than monospaced, and it takes its colour from where it sits.
    */
   .label {
     font-stretch: var(--width-label);

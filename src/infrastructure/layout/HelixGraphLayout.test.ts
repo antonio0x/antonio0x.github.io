@@ -7,7 +7,7 @@ import type { Vec3 } from '@domain/shared/Vec3'
 import { HelixGraphLayout } from './HelixGraphLayout'
 
 const chapter = (id: string, index: number, focusNodeId: string) =>
-  Chapter.create({ id, index, eyebrow: '', title: id, body: '', focusNodeId })
+  Chapter.create({ id, index, title: id, body: '', focusNodeId })
 
 const node = (id: string, chapterId: string) =>
   NarrativeNode.create({ id, chapterId, kind: 'skill', label: id })

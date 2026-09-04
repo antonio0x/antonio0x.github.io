@@ -202,7 +202,6 @@ export function buildJourney({ profile, projects, copy }: BuildJourneyInput): Jo
     return Chapter.create({
       id,
       index,
-      eyebrow: text.eyebrow,
       title: text.title,
       body: text.body,
       focusNodeId: nodes[0]?.id ?? null,
