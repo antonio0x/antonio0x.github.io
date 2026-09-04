@@ -1,0 +1,144 @@
+@import 'tailwindcss';
+
+/*
+ * Design tokens.
+ *
+ * One palette, defined once. Components reference tokens, never raw hex, so a
+ * change of mood is one edit here rather than a search across the codebase.
+ */
+@theme {
+  --color-void: #04060b;
+  --color-surface: #0a1018;
+  --color-raised: #0f1724;
+  --color-line: #1c2636;
+  --color-line-bright: #2b3a52;
+
+  --color-ink: #e9eff8;
+  --color-ink-muted: #96a5bd;
+  --color-ink-faint: #61708a;
+
+  /* The pulse travelling through the network. */
+  --color-signal: #45e3c0;
+  --color-signal-deep: #10a48a;
+  --color-signal-dim: #1b5c53;
+
+  /* Reserved for what the author wants you to look at. */
+  --color-ember: #f2954f;
+
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+  --text-display: clamp(2.75rem, 9vw, 6.5rem);
+  --text-chapter: clamp(1.9rem, 5vw, 3.25rem);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background-color: var(--color-void);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    /* The story is one long vertical journey; sideways scroll is always a bug. */
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Reachable only by keyboard, and impossible to miss once it is. */
+  .skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 100;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-signal);
+    color: var(--color-void);
+    font-weight: 600;
+    transform: translateY(-200%);
+    transition: transform 180ms var(--ease-out-quint);
+  }
+
+  .skip-link:focus-visible {
+    transform: translateY(0);
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-void);
+  }
+
+  /*
+   * A stated preference for less motion is an instruction, not a hint. The
+   * WebGL layer checks the same query and refuses to mount at all.
+   */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Small uppercase label above a heading. Sets the terminal-ish register. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-signal);
+  }
+
+  .rule {
+    border: 0;
+    border-top: 1px solid var(--color-line);
+  }
+}
