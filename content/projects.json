@@ -1,0 +1,111 @@
+{
+  "es": [
+    {
+      "id": "at-sv",
+      "name": "AT-SV",
+      "tagline": "Asistente tributario para El Salvador",
+      "description": "Proyecto de titulación construido como aplicación completa: backend, frontend y una carpeta de especificaciones que guía la implementación. Nace del trabajo real con facturación electrónica y del módulo de Seguridad y Optimización en la Nube.",
+      "role": "Diseño y desarrollo completo",
+      "year": 2026,
+      "skillIds": ["typescript", "linux", "docker"],
+      "links": { "repository": "https://github.com/antonio0x/AT-SV", "demo": null },
+      "featured": true,
+      "highlights": [
+        "Arquitectura separada en backend y frontend",
+        "Especificaciones escritas antes que el código"
+      ]
+    },
+    {
+      "id": "defensa-asistente-tributario",
+      "name": "Defensa AT-SV",
+      "tagline": "Guía de preguntas y respuestas para la defensa del proyecto",
+      "description": "Sitio estático que documenta y prepara la defensa del proyecto final del módulo de Seguridad y Optimización en la Nube. Documentar la defensa es parte de entregarla.",
+      "role": "Autor",
+      "year": 2026,
+      "skillIds": ["html-css", "javascript"],
+      "links": {
+        "repository": "https://github.com/antonio0x/defensa-asistente-tributario-sv",
+        "demo": null
+      },
+      "featured": false,
+      "highlights": []
+    },
+    {
+      "id": "neowindows",
+      "name": "neowindows",
+      "tagline": "Instalar Neovim y Oh My Posh en Windows, sin fricción",
+      "description": "Guía de instalación mínima para dejar un entorno de desarrollo funcionando en Windows. Publicada en 2021 y todavía útil para otras personas.",
+      "role": "Autor",
+      "year": 2021,
+      "skillIds": ["neovim"],
+      "links": { "repository": "https://github.com/antonio0x/neowindows", "demo": null },
+      "featured": true,
+      "highlights": ["Recibió estrellas de la comunidad", "Configuración mínima, cero ruido"]
+    },
+    {
+      "id": "dotfiles",
+      "name": "dotfiles",
+      "tagline": "Mi entorno de trabajo, versionado",
+      "description": "Configuración personal de terminal, editor y sistema. Un entorno reproducible es una habilidad de administración de sistemas, no una preferencia estética.",
+      "role": "Autor",
+      "year": 2026,
+      "skillIds": ["linux", "neovim", "git"],
+      "links": { "repository": "https://github.com/antonio0x/dotfiles", "demo": null },
+      "featured": false,
+      "highlights": []
+    }
+  ],
+  "en": [
+    {
+      "id": "at-sv",
+      "name": "AT-SV",
+      "tagline": "A tax assistant for El Salvador",
+      "description": "Final degree project built as a complete application: backend, frontend and a specification folder that drives the implementation. It grew out of real work on electronic invoicing and the Cloud Security and Optimisation module.",
+      "role": "Design and full implementation",
+      "year": 2026,
+      "skillIds": ["typescript", "linux", "docker"],
+      "links": { "repository": "https://github.com/antonio0x/AT-SV", "demo": null },
+      "featured": true,
+      "highlights": ["Backend and frontend kept apart", "Specifications written before the code"]
+    },
+    {
+      "id": "defensa-asistente-tributario",
+      "name": "AT-SV Defence",
+      "tagline": "Q&A guide for the final project defence",
+      "description": "A static site documenting and preparing the defence of the final project for the Cloud Security and Optimisation module. Documenting a defence is part of delivering it.",
+      "role": "Author",
+      "year": 2026,
+      "skillIds": ["html-css", "javascript"],
+      "links": {
+        "repository": "https://github.com/antonio0x/defensa-asistente-tributario-sv",
+        "demo": null
+      },
+      "featured": false,
+      "highlights": []
+    },
+    {
+      "id": "neowindows",
+      "name": "neowindows",
+      "tagline": "Neovim and Oh My Posh on Windows, without the friction",
+      "description": "A minimal installation guide for getting a development environment running on Windows. Published in 2021 and still useful to other people.",
+      "role": "Author",
+      "year": 2021,
+      "skillIds": ["neovim"],
+      "links": { "repository": "https://github.com/antonio0x/neowindows", "demo": null },
+      "featured": true,
+      "highlights": ["Picked up stars from the community", "Minimal configuration, no noise"]
+    },
+    {
+      "id": "dotfiles",
+      "name": "dotfiles",
+      "tagline": "My working environment, under version control",
+      "description": "Personal terminal, editor and system configuration. A reproducible environment is a systems administration skill, not an aesthetic preference.",
+      "role": "Author",
+      "year": 2026,
+      "skillIds": ["linux", "neovim", "git"],
+      "links": { "repository": "https://github.com/antonio0x/dotfiles", "demo": null },
+      "featured": false,
+      "highlights": []
+    }
+  ]
+}

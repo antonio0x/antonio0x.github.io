@@ -1,0 +1,312 @@
+{
+  "fullName": "Roberto Antonio Quintanilla Aguilar",
+  "displayName": "Antonio Quintanilla",
+  "headline": "Analista Programador · Soporte Técnico · Desarrollo Web · Linux",
+  "location": "El Salvador",
+  "summary": "Profesional de Ingeniería en Sistemas y Redes Informáticas con experiencia en soporte técnico, desarrollo web y administración de sistemas GNU/Linux. Trabajo donde el software se encuentra con la infraestructura que lo sostiene.",
+  "skills": [
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "language",
+      "proficiency": "core"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "language",
+      "proficiency": "core"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "language",
+      "proficiency": "working"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "language",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "html-css",
+      "name": "HTML5 / CSS",
+      "category": "language",
+      "proficiency": "core"
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "category": "database",
+      "proficiency": "core"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "database",
+      "proficiency": "working"
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "category": "framework",
+      "proficiency": "working"
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "framework",
+      "proficiency": "working"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "framework",
+      "proficiency": "working"
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "category": "framework",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "framework",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "linux",
+      "name": "GNU/Linux",
+      "category": "devops",
+      "proficiency": "core"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "devops",
+      "proficiency": "working"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops",
+      "proficiency": "core"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "devops",
+      "proficiency": "working"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "category": "devops",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "category": "tool",
+      "proficiency": "working"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "category": "tool",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "scrum",
+      "name": "Scrum",
+      "category": "methodology",
+      "proficiency": "working"
+    },
+    {
+      "id": "kanban",
+      "name": "Kanban",
+      "category": "methodology",
+      "proficiency": "working"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "open-solutions-systems",
+      "organization": "Open Solutions Systems",
+      "role": "Soporte Técnico / Desarrollo Web",
+      "period": {
+        "start": "2025-08",
+        "end": null
+      },
+      "mode": "hybrid",
+      "highlights": [
+        "Soporte y asistencia técnica para sistemas web desarrollados con PHP y MariaDB sobre GNU/Linux.",
+        "Diagnóstico y resolución de incidencias técnicas en modalidad presencial y remota.",
+        "Mantenimiento y soporte de equipos informáticos de clientes.",
+        "Participación en la implementación de soluciones de facturación electrónica y optimización de procesos."
+      ],
+      "skillIds": [
+        "php",
+        "mariadb",
+        "linux",
+        "javascript",
+        "html-css"
+      ]
+    },
+    {
+      "id": "variedades-elizabeth",
+      "organization": "Variedades y Papelería Elizabeth",
+      "role": "Administrador de Sistemas",
+      "period": {
+        "start": "2024-12",
+        "end": "2025-07"
+      },
+      "mode": "onsite",
+      "highlights": [
+        "Administración y soporte de tecnologías de información para las operaciones del negocio.",
+        "Capacitación del personal en PC, impresoras multifuncionales y herramientas tecnológicas.",
+        "Resolución de problemas de configuración de red y soporte a usuarios.",
+        "Creación de material digital y uso operativo de Word, Excel, Publisher y Figma."
+      ],
+      "skillIds": [
+        "linux",
+        "figma"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "ing-sistemas-redes",
+      "institution": "Universidad Gerardo Barrios",
+      "program": "Ingeniería en Sistemas y Redes Informáticas",
+      "period": {
+        "start": "2019",
+        "end": "2025"
+      },
+      "status": "completed"
+    },
+    {
+      "id": "pre-especializacion-nube",
+      "institution": "Universidad Gerardo Barrios",
+      "program": "Pre-especialización en Servicios y Soluciones en la Nube",
+      "period": {
+        "start": "2025-08",
+        "end": null
+      },
+      "status": "in-progress"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "git-github",
+      "name": "Git + GitHub",
+      "issuer": "Udemy"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "issuer": "DevTalles"
+    },
+    {
+      "id": "linux-intro",
+      "name": "Introducción a Linux",
+      "issuer": null
+    },
+    {
+      "id": "fullstack-laravel-vue",
+      "name": "Full Stack con Laravel & Vue.js",
+      "issuer": null
+    },
+    {
+      "id": "nosql-mongo-node",
+      "name": "NoSQL con MongoDB y Node.js",
+      "issuer": null
+    }
+  ],
+  "channels": [
+    {
+      "kind": "email",
+      "label": "rantonioquin@gmail.com",
+      "href": "mailto:rantonioquin@gmail.com"
+    },
+    {
+      "kind": "phone",
+      "label": "+503 7362 1495",
+      "href": "tel:+50373621495"
+    },
+    {
+      "kind": "github",
+      "label": "github.com/antonio0x",
+      "href": "https://github.com/antonio0x"
+    },
+    {
+      "kind": "resume",
+      "label": "Descargar CV (PDF)",
+      "href": "/AntonioQuintanilla-CV.pdf"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "En mejora continua"
+    }
+  ],
+  "portrait": {
+    "src": "/portrait-512.jpg",
+    "webpSrc": "/portrait-512.webp",
+    "alt": "Antonio Quintanilla",
+    "width": 512,
+    "height": 512
+  },
+  "setup": [
+    {
+      "id": "arch",
+      "name": "Arch Linux",
+      "category": "distro",
+      "note": "Instalación desde base, armada pieza por pieza. Entender qué hace cada componente vale más que un instalador que decide por vos.",
+      "url": "https://archlinux.org"
+    },
+    {
+      "id": "fish",
+      "name": "fish",
+      "category": "shell",
+      "note": "Shell interactiva con autocompletado real. Los scripts de sistema siguen siendo POSIX; la comodidad diaria no tiene por qué serlo.",
+      "url": "https://fishshell.com"
+    },
+    {
+      "id": "zellij",
+      "name": "Zellij",
+      "category": "multiplexer",
+      "note": "Sesiones persistentes con layouts declarativos. Cierro la terminal y el entorno de trabajo sigue donde lo dejé.",
+      "url": "https://zellij.dev"
+    },
+    {
+      "id": "tmux",
+      "name": "Tmux",
+      "category": "multiplexer",
+      "note": "Lo que uso sobre SSH. En un servidor ajeno no instalo nada: tmux ya está.",
+      "url": "https://github.com/tmux/tmux"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim · LazyVim",
+      "category": "editor",
+      "note": "LazyVim como base y configuración propia encima. Editar a la velocidad del pensamiento se entrena, no se instala.",
+      "url": "https://neovim.io"
+    },
+    {
+      "id": "dotfiles",
+      "name": "dotfiles",
+      "category": "tooling",
+      "note": "Todo lo anterior versionado en Git. Una máquina nueva queda idéntica a la anterior en minutos, y eso es administración de sistemas, no decoración.",
+      "url": "https://github.com/antonio0x/dotfiles"
+    }
+  ]
+}

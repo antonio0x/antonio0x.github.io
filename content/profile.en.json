@@ -1,0 +1,312 @@
+{
+  "fullName": "Roberto Antonio Quintanilla Aguilar",
+  "displayName": "Antonio Quintanilla",
+  "headline": "Systems Analyst · Technical Support · Web Development · Linux",
+  "location": "El Salvador",
+  "summary": "Computer Systems and Networks Engineering graduate with hands-on experience in technical support, web development and GNU/Linux systems administration. I work where software meets the infrastructure that keeps it running.",
+  "skills": [
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "language",
+      "proficiency": "core"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "category": "language",
+      "proficiency": "core"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "language",
+      "proficiency": "working"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "category": "language",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "html-css",
+      "name": "HTML5 / CSS",
+      "category": "language",
+      "proficiency": "core"
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "category": "database",
+      "proficiency": "core"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "category": "database",
+      "proficiency": "working"
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "category": "framework",
+      "proficiency": "working"
+    },
+    {
+      "id": "vue",
+      "name": "Vue.js",
+      "category": "framework",
+      "proficiency": "working"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "category": "framework",
+      "proficiency": "working"
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "category": "framework",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "category": "framework",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "linux",
+      "name": "GNU/Linux",
+      "category": "devops",
+      "proficiency": "core"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "devops",
+      "proficiency": "working"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "category": "devops",
+      "proficiency": "core"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "devops",
+      "proficiency": "working"
+    },
+    {
+      "id": "digitalocean",
+      "name": "DigitalOcean",
+      "category": "devops",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "category": "tool",
+      "proficiency": "working"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "category": "tool",
+      "proficiency": "familiar"
+    },
+    {
+      "id": "scrum",
+      "name": "Scrum",
+      "category": "methodology",
+      "proficiency": "working"
+    },
+    {
+      "id": "kanban",
+      "name": "Kanban",
+      "category": "methodology",
+      "proficiency": "working"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "open-solutions-systems",
+      "organization": "Open Solutions Systems",
+      "role": "Technical Support / Web Development",
+      "period": {
+        "start": "2025-08",
+        "end": null
+      },
+      "mode": "hybrid",
+      "highlights": [
+        "Support and technical assistance for web systems built with PHP and MariaDB on GNU/Linux.",
+        "Diagnosis and resolution of technical incidents, both on site and remotely.",
+        "Maintenance and support of client computer equipment.",
+        "Contributed to the rollout of electronic invoicing solutions and process optimisation."
+      ],
+      "skillIds": [
+        "php",
+        "mariadb",
+        "linux",
+        "javascript",
+        "html-css"
+      ]
+    },
+    {
+      "id": "variedades-elizabeth",
+      "organization": "Variedades y Papelería Elizabeth",
+      "role": "Systems Administrator",
+      "period": {
+        "start": "2024-12",
+        "end": "2025-07"
+      },
+      "mode": "onsite",
+      "highlights": [
+        "Administration and support of the information technology behind daily business operations.",
+        "Trained staff on PCs, multifunction printers and other technology tools.",
+        "Resolved network configuration problems and provided end-user support.",
+        "Produced digital material using Word, Excel, Publisher and Figma."
+      ],
+      "skillIds": [
+        "linux",
+        "figma"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "ing-sistemas-redes",
+      "institution": "Universidad Gerardo Barrios",
+      "program": "BEng in Computer Systems and Networks Engineering",
+      "period": {
+        "start": "2019",
+        "end": "2025"
+      },
+      "status": "completed"
+    },
+    {
+      "id": "pre-especializacion-nube",
+      "institution": "Universidad Gerardo Barrios",
+      "program": "Cloud Services and Solutions specialisation track",
+      "period": {
+        "start": "2025-08",
+        "end": null
+      },
+      "status": "in-progress"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "git-github",
+      "name": "Git + GitHub",
+      "issuer": "Udemy"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "issuer": "DevTalles"
+    },
+    {
+      "id": "linux-intro",
+      "name": "Introduction to Linux",
+      "issuer": null
+    },
+    {
+      "id": "fullstack-laravel-vue",
+      "name": "Full Stack with Laravel & Vue.js",
+      "issuer": null
+    },
+    {
+      "id": "nosql-mongo-node",
+      "name": "NoSQL with MongoDB and Node.js",
+      "issuer": null
+    }
+  ],
+  "channels": [
+    {
+      "kind": "email",
+      "label": "rantonioquin@gmail.com",
+      "href": "mailto:rantonioquin@gmail.com"
+    },
+    {
+      "kind": "phone",
+      "label": "+503 7362 1495",
+      "href": "tel:+50373621495"
+    },
+    {
+      "kind": "github",
+      "label": "github.com/antonio0x",
+      "href": "https://github.com/antonio0x"
+    },
+    {
+      "kind": "resume",
+      "label": "Download CV (PDF)",
+      "href": "/AntonioQuintanilla-CV.pdf"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Spanish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Continuously improving"
+    }
+  ],
+  "portrait": {
+    "src": "/portrait-512.jpg",
+    "webpSrc": "/portrait-512.webp",
+    "alt": "Antonio Quintanilla",
+    "width": 512,
+    "height": 512
+  },
+  "setup": [
+    {
+      "id": "arch",
+      "name": "Arch Linux",
+      "category": "distro",
+      "note": "Installed from base and assembled piece by piece. Understanding what each component does is worth more than an installer that decides for you.",
+      "url": "https://archlinux.org"
+    },
+    {
+      "id": "fish",
+      "name": "fish",
+      "category": "shell",
+      "note": "An interactive shell with completion that actually works. System scripts stay POSIX; daily comfort does not have to be.",
+      "url": "https://fishshell.com"
+    },
+    {
+      "id": "zellij",
+      "name": "Zellij",
+      "category": "multiplexer",
+      "note": "Persistent sessions with declarative layouts. I close the terminal and the workspace is still where I left it.",
+      "url": "https://zellij.dev"
+    },
+    {
+      "id": "tmux",
+      "name": "Tmux",
+      "category": "multiplexer",
+      "note": "What I use over SSH. On someone else's server I install nothing: tmux is already there.",
+      "url": "https://github.com/tmux/tmux"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim · LazyVim",
+      "category": "editor",
+      "note": "LazyVim as the base with my own configuration on top. Editing at the speed of thought is trained, not installed.",
+      "url": "https://neovim.io"
+    },
+    {
+      "id": "dotfiles",
+      "name": "dotfiles",
+      "category": "tooling",
+      "note": "All of the above under version control. A new machine matches the old one in minutes, and that is systems administration, not decoration.",
+      "url": "https://github.com/antonio0x/dotfiles"
+    }
+  ]
+}
