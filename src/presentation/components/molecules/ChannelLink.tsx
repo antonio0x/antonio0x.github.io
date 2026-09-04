@@ -1,5 +1,7 @@
 import type { ContactChannel } from '@domain/profile/ContactChannel'
 import { Icon, type IconName } from '../atoms/Icon'
+import { nodeIds } from '@domain/narrative/nodeIds'
+import { useNodeLink } from '../../hooks/useNodeLink'
 import { SmartLink } from '../atoms/SmartLink'
 
 const ICON: Readonly<Record<ContactChannel['kind'], IconName>> = {
@@ -12,8 +14,10 @@ const ICON: Readonly<Record<ContactChannel['kind'], IconName>> = {
 }
 
 export function ChannelLink({ channel }: { channel: ContactChannel }) {
+  const link = useNodeLink(nodeIds.contact(channel.kind))
+
   return (
-    <li>
+    <li {...link}>
       <SmartLink
         href={channel.href}
         external={channel.isExternal}

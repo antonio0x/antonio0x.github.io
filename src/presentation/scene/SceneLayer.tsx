@@ -68,7 +68,7 @@ export function SceneLayer({ journey, layout }: SceneLayerProps) {
         flying past behind it.
       */}
       <div className="absolute inset-0 bg-void/78 md:hidden" />
-      <div className="absolute inset-0 hidden bg-gradient-to-r from-void via-void/75 to-transparent md:block" />
+      <div className="absolute inset-0 hidden bg-gradient-to-r from-void from-30% via-void/88 via-62% to-transparent md:block" />
     </div>
   )
 }

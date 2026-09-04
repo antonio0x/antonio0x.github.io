@@ -61,10 +61,14 @@ export function Stage({ journey, layout, tier, compact }: StageProps) {
       <CameraRig
         chapterCentres={graph.chapterCentres}
         distance={compact ? 32 : 30}
-        lateralBias={compact ? 0 : 0.3}
+        lateralBias={compact ? 0 : 0.46}
       />
 
-      <NodeField nodes={graph.nodes} chapterCount={graph.chapterCount} />
+      <NodeField
+        nodes={graph.nodes}
+        chapterCount={graph.chapterCount}
+        neighbours={graph.neighbours}
+      />
       <EdgeField edges={graph.edges} chapterCount={graph.chapterCount} />
 
       {preset.packets && (

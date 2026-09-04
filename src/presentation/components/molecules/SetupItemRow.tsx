@@ -1,5 +1,7 @@
 import type { SetupItem } from '@domain/profile/SetupItem'
 import { SmartLink } from '../atoms/SmartLink'
+import { nodeIds } from '@domain/narrative/nodeIds'
+import { useNodeLink } from '../../hooks/useNodeLink'
 import { useLocale } from '../../i18n/useLocale'
 
 export interface SetupItemRowProps {
@@ -10,9 +12,12 @@ export interface SetupItemRowProps {
 export function SetupItemRow({ item }: SetupItemRowProps) {
   const { t } = useLocale()
   const layer = t.setupLayers[item.category] ?? item.category
+  const link = useNodeLink(nodeIds.setup(item.id))
 
   return (
-    <li className="grid gap-1 border-l border-line py-3 pl-5 transition-colors duration-300 hover:border-signal-dim sm:grid-cols-[9rem_1fr] sm:gap-6">
+    <li
+      {...link}
+      className="grid gap-1 border-l border-line py-3 pl-5 transition-colors duration-300 hover:border-signal-dim sm:grid-cols-[9rem_1fr] sm:gap-6">
       <div className="label uppercase tracking-[0.18em] text-ink-faint">{layer}</div>
 
       <div>

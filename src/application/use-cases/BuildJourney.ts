@@ -8,6 +8,7 @@ import type { Profile } from '@domain/profile/Profile'
 import type { Project } from '@domain/projects/Project'
 import { Project as ProjectEntity } from '@domain/projects/Project'
 import { invariant } from '@domain/shared/DomainError'
+import { nodeIds as nodeId } from '@domain/narrative/nodeIds'
 
 export interface BuildJourneyInput {
   readonly profile: Profile
@@ -15,18 +16,6 @@ export interface BuildJourneyInput {
   readonly copy: readonly ChapterCopy[]
 }
 
-/** Node id namespaces, so a skill and a project can never collide on a bare id. */
-const nodeId = {
-  identity: () => 'identity:root',
-  education: (id: string) => `education:${id}`,
-  certification: (id: string) => `cert:${id}`,
-  role: (id: string) => `role:${id}`,
-  skill: (id: string) => `skill:${id}`,
-  setup: (id: string) => `setup:${id}`,
-  project: (id: string) => `project:${id}`,
-  horizon: (id: string) => `horizon:${id}`,
-  contact: (kind: string) => `contact:${kind}`,
-} as const
 
 function nodesForChapter(
   chapterId: ChapterId,

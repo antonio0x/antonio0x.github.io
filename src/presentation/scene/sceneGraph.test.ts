@@ -35,6 +35,31 @@ class PartialLayout implements GraphLayoutService {
 describe('buildSceneGraph', () => {
   const layout = new HelixGraphLayout()
 
+  it("exposes each node's direct connections, so a highlight can find its neighbourhood", () => {
+    const journey = Journey.create({
+      chapters: [chapter('a', 0, 'a1')],
+      nodes: [node('a1', 'a'), node('a2', 'a'), node('a3', 'a')],
+      edges: [
+        Edge.create({ from: 'a1', to: 'a2', strength: 0.7 }),
+        Edge.create({ from: 'a2', to: 'a3', strength: 0.7 }),
+      ],
+    })
+
+    const graph = buildSceneGraph(journey, layout)
+
+    // Adjacency runs both ways: pointing at either end lights the same line.
+    expect([...(graph.neighbours.get('a1') ?? [])]).toEqual(['a2'])
+    expect([...(graph.neighbours.get('a2') ?? [])].sort()).toEqual(['a1', 'a3'])
+    expect(graph.neighbours.get('nobody')).toBeUndefined()
+  })
+
+  it('records both endpoints on every edge, so an edge knows when it is pointed at', () => {
+    const [edge] = buildSceneGraph(buildJourney(), layout).edges
+
+    expect(edge?.fromId).toBe('a1')
+    expect(edge?.toId).toBe('b1')
+  })
+
   it('carries every node through with its position and chapter index', () => {
     const graph = buildSceneGraph(buildJourney(), layout)
 

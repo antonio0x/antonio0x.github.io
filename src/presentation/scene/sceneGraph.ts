@@ -14,6 +14,9 @@ export interface SceneNode {
 
 export interface SceneEdge {
   readonly id: string
+  /** The node ids this edge joins, so a highlight can find its own lines. */
+  readonly fromId: string
+  readonly toId: string
   readonly from: Vec3
   readonly to: Vec3
   readonly strength: number
@@ -35,6 +38,13 @@ export interface SceneGraph {
    * path keeps working if the layout strategy is swapped out entirely.
    */
   readonly chapterCentres: readonly Vec3[]
+  /**
+   * Node id to the ids it is directly connected to.
+   *
+   * Built once here so highlighting a node can brighten its neighbours without
+   * scanning every edge sixty times a second.
+   */
+  readonly neighbours: ReadonlyMap<string, ReadonlySet<string>>
 }
 
 /**
@@ -79,6 +89,8 @@ export function buildSceneGraph(journey: Journey, layout: GraphLayoutService): S
     return [
       {
         id: edge.id,
+        fromId: from.id,
+        toId: to.id,
         from: from.position,
         to: to.position,
         strength: edge.strength,
@@ -87,11 +99,24 @@ export function buildSceneGraph(journey: Journey, layout: GraphLayoutService): S
     ]
   })
 
+  const neighbours = new Map<string, Set<string>>()
+  const link = (a: string, b: string) => {
+    const existing = neighbours.get(a)
+    if (existing === undefined) neighbours.set(a, new Set([b]))
+    else existing.add(b)
+  }
+
+  edges.forEach((edge) => {
+    link(edge.fromId, edge.toId)
+    link(edge.toId, edge.fromId)
+  })
+
   return {
     nodes,
     edges,
     chapterCount: journey.chapterCount,
     chapterCentres: journey.chapters.map((chapter) => centroidOf(nodes, chapter.index)),
+    neighbours,
   }
 }
 

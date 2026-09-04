@@ -2,6 +2,8 @@ import type { Experience } from '@domain/profile/Experience'
 import type { Skill } from '@domain/profile/Skill'
 import { Tag } from '../atoms/Tag'
 import { formatPeriod } from '../../lib/format'
+import { nodeIds } from '@domain/narrative/nodeIds'
+import { useNodeLink } from '../../hooks/useNodeLink'
 import { useLocale } from '../../i18n/useLocale'
 
 export interface ExperienceItemProps {
@@ -12,9 +14,12 @@ export interface ExperienceItemProps {
 
 export function ExperienceItem({ experience, skills }: ExperienceItemProps) {
   const { locale, t } = useLocale()
+  const link = useNodeLink(nodeIds.role(experience.id))
 
   return (
-    <li className="relative border-l border-line pl-6 pb-10 last:pb-0">
+    <li
+      {...link}
+      className="relative border-l border-line pl-6 pb-10 last:pb-0">
       <span
         aria-hidden="true"
         className="absolute top-1.5 -left-[5px] h-2.5 w-2.5 rounded-full border border-signal bg-void"

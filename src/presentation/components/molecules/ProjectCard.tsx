@@ -4,6 +4,8 @@ import { SmartLink } from '../atoms/SmartLink'
 import { Icon } from '../atoms/Icon'
 import { Tag } from '../atoms/Tag'
 import { repoPath } from '../../lib/repoPath'
+import { nodeIds } from '@domain/narrative/nodeIds'
+import { useNodeLink } from '../../hooks/useNodeLink'
 import { useLocale } from '../../i18n/useLocale'
 
 export interface ProjectCardProps {
@@ -14,9 +16,11 @@ export interface ProjectCardProps {
 export function ProjectCard({ project, skills }: ProjectCardProps) {
   const { t } = useLocale()
   const repo = project.links.repository === null ? null : repoPath(project.links.repository)
+  const link = useNodeLink(nodeIds.project(project.id))
 
   return (
     <li
+      {...link}
       className={[
         'group flex flex-col rounded-2xl border bg-surface/90 p-6 transition-colors duration-300 focus-within:border-signal-dim',
         // A featured project takes the full width of the grid. Emphasis by size

@@ -46,7 +46,7 @@ export function EdgeField({ edges, chapterCount }: EdgeFieldProps) {
     const geometry = geometryRef.current
     if (geometry === null) return
 
-    const { progress } = useJourneyStore.getState()
+    const { progress, hoveredNodeId } = useJourneyStore.getState()
     const alphas = currentAlpha.current
     const [r, g, b] = EDGE_COLOR
 
@@ -55,7 +55,16 @@ export function EdgeField({ edges, chapterCount }: EdgeFieldProps) {
       const next = damp(alphas[index] ?? 0, target, 6, delta)
       alphas[index] = next
 
-      const intensity = next * (0.35 + edge.strength * 0.85)
+      /*
+       * A line that touches the node being pointed at is the whole point of
+       * the gesture: it is the visible answer to "what is this connected to".
+       * Everything else steps back so the answer is not buried in the mesh.
+       */
+      const touched =
+        hoveredNodeId !== null && (edge.fromId === hoveredNodeId || edge.toId === hoveredNodeId)
+      const emphasis = hoveredNodeId === null ? 1 : touched ? 4.2 : 0.22
+
+      const intensity = next * (0.35 + edge.strength * 0.85) * emphasis
       const offset = index * 6
 
       for (const vertex of [0, 3]) {

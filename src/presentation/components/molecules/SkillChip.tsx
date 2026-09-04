@@ -1,4 +1,6 @@
 import type { Skill } from '@domain/profile/Skill'
+import { nodeIds } from '@domain/narrative/nodeIds'
+import { useNodeLink } from '../../hooks/useNodeLink'
 import { useLocale } from '../../i18n/useLocale'
 
 /**
@@ -13,9 +15,11 @@ const TONE_BY_PROFICIENCY = {
 
 export function SkillChip({ skill }: { skill: Skill }) {
   const { t } = useLocale()
+  const link = useNodeLink(nodeIds.skill(skill.id))
 
   return (
     <li
+      {...link}
       className={`inline-flex items-baseline gap-2 rounded-lg border px-3 py-1.5 text-sm ${TONE_BY_PROFICIENCY[skill.proficiency]}`}
     >
       <span>{skill.name}</span>

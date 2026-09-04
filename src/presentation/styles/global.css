@@ -296,6 +296,59 @@
     max-width: var(--measure);
   }
 
+  /*
+   * The mark that says "this thing is in the network".
+   *
+   * Every element carrying data-node has a twin among the points behind the
+   * text. Without a visible affordance that correspondence is a secret: a
+   * visitor has no reason to hover a paragraph. So each linked item grows a
+   * small connector on its leading edge — dim at rest, lit when the item is
+   * pointed at or focused, at which moment its node and every connection it
+   * has ignite in the layer behind.
+   */
+  [data-node] {
+    position: relative;
+    transition:
+      color 220ms var(--ease-out-quint),
+      border-color 220ms var(--ease-out-quint);
+  }
+
+  [data-node]::before {
+    content: '';
+    position: absolute;
+    top: 1.15em;
+    left: -0.5rem;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 999px;
+    background-color: var(--color-line-bright);
+    transform: scale(0.75);
+    transition:
+      background-color 220ms var(--ease-out-quint),
+      box-shadow 260ms var(--ease-out-quint),
+      transform 260ms var(--ease-out-quint);
+  }
+
+  [data-node]:hover::before,
+  [data-node]:focus-within::before {
+    background-color: var(--color-signal);
+    /* Offset and blur, so it reads as light on a surface rather than a sticker. */
+    box-shadow: 0 1px 10px 1px color-mix(in srgb, var(--color-signal) 55%, transparent);
+    transform: scale(1.25);
+  }
+
+  [data-node]:hover,
+  [data-node]:focus-within {
+    color: var(--color-ink);
+  }
+
+  /* A pointer cannot reach it and there is nothing to discover; hide the mark. */
+  @media (hover: none) {
+    [data-node]::before {
+      display: none;
+    }
+  }
+
   .rule {
     border: 0;
     border-top: 1px solid var(--color-line);

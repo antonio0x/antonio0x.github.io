@@ -20,14 +20,22 @@
  */
 export const GLOW_VERTEX_SHADER = /* glsl */ `
   attribute vec3 aColor;
+  /**
+   * How much attention this node is holding: 1 is its resting state, above
+   * that it is the one being pointed at or a direct neighbour, below that it
+   * has stepped back so the answer is easy to find.
+   */
+  attribute float aFocus;
 
   varying vec3 vColor;
   varying vec2 vGlowUv;
   varying float vViewDepth;
+  varying float vFocus;
 
   void main() {
     vColor = aColor;
     vGlowUv = uv;
+    vFocus = aFocus;
 
     vec4 origin = modelViewMatrix * instanceMatrix * vec4(0.0, 0.0, 0.0, 1.0);
 
@@ -63,6 +71,7 @@ export const GLOW_FRAGMENT_SHADER = /* glsl */ `
   varying vec3 vColor;
   varying vec2 vGlowUv;
   varying float vViewDepth;
+  varying float vFocus;
 
   void main() {
     float distance = length(vGlowUv - 0.5) * 2.0;
@@ -80,7 +89,11 @@ export const GLOW_FRAGMENT_SHADER = /* glsl */ `
 
     // Additive blending multiplies by alpha itself; pre-multiplying here would
     // square the falloff and collapse every halo into a point.
-    gl_FragColor = vec4(vColor, alpha);
+    //
+    // Focus rides on the colour rather than the alpha for the same reason: on
+    // an additive surface, brightness IS the emphasis, and scaling alpha
+    // instead would eat the halo the emphasis is supposed to grow.
+    gl_FragColor = vec4(vColor * vFocus, alpha);
   }
 `
 
