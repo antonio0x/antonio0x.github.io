@@ -1,6 +1,7 @@
 import type { Project } from '@domain/projects/Project'
 import type { Skill } from '@domain/profile/Skill'
 import { SmartLink } from '../atoms/SmartLink'
+import { Icon } from '../atoms/Icon'
 import { Tag } from '../atoms/Tag'
 import { repoPath } from '../../lib/repoPath'
 import { useLocale } from '../../i18n/useLocale'
@@ -34,8 +35,8 @@ export function ProjectCard({ project, skills }: ProjectCardProps) {
       <p className="mt-1 text-sm text-signal">{project.tagline}</p>
 
       {repo !== null && (
-        <p className="mt-3 data text-ink-faint">
-          <span aria-hidden="true">◇ </span>
+        <p className="mt-3 data flex items-center gap-1.5 text-ink-faint">
+          <Icon name="repository" size={14} className="shrink-0" />
           {repo}
         </p>
       )}

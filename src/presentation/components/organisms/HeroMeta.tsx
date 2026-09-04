@@ -1,4 +1,5 @@
 import type { Portrait } from '@domain/profile/Portrait'
+import { Icon } from '../atoms/Icon'
 import { ProfilePortrait } from '../atoms/ProfilePortrait'
 import { useLocale } from '../../i18n/useLocale'
 
@@ -39,8 +40,9 @@ export function HeroMeta({ location, headline, experience, portrait }: HeroMetaP
         </div>
       </dl>
 
-      <p aria-hidden="true" className="mt-16 label tracking-[0.2em] text-signal">
-        ↓ {t.scrollHint}
+      <p aria-hidden="true" className="mt-16 label flex items-center gap-2 tracking-[0.2em] text-signal">
+        <Icon name="arrowDown" size={14} className="shrink-0" />
+        {t.scrollHint}
       </p>
     </>
   )
