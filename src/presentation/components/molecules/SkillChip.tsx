@@ -19,7 +19,7 @@ export function SkillChip({ skill }: { skill: Skill }) {
       className={`inline-flex items-baseline gap-2 rounded-lg border px-3 py-1.5 text-sm ${TONE_BY_PROFICIENCY[skill.proficiency]}`}
     >
       <span>{skill.name}</span>
-      <span className="font-mono text-[0.65rem] tracking-wide text-ink-faint">
+      <span className="label text-[0.65rem] text-ink-faint">
         {t.proficiency[skill.proficiency]}
       </span>
     </li>

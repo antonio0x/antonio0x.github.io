@@ -10,7 +10,7 @@ export function CertificationList({ entries }: { entries: readonly Certification
         >
           <span>{certification.name}</span>
           {certification.hasIssuer && (
-            <span className="shrink-0 font-mono text-xs text-ink-faint">{certification.issuer}</span>
+            <span className="shrink-0 label text-ink-faint">{certification.issuer}</span>
           )}
         </li>
       ))}

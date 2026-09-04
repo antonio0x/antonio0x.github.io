@@ -20,7 +20,7 @@ export function ContactPanel({ channels, languages }: ContactPanelProps) {
       </ul>
 
       <section aria-label={t.languagesHeading}>
-        <h3 className="font-mono text-xs tracking-[0.18em] text-ink-faint uppercase">
+        <h3 className="label tracking-[0.18em] text-ink-faint uppercase">
           {t.languagesHeading}
         </h3>
         <hr className="rule mt-3 mb-4" />

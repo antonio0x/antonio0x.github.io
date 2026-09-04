@@ -13,7 +13,7 @@ export function SetupItemRow({ item }: SetupItemRowProps) {
 
   return (
     <li className="grid gap-1 border-l border-line py-3 pl-5 transition-colors duration-300 hover:border-signal-dim sm:grid-cols-[9rem_1fr] sm:gap-6">
-      <div className="font-mono text-xs uppercase tracking-[0.18em] text-ink-faint">{layer}</div>
+      <div className="label uppercase tracking-[0.18em] text-ink-faint">{layer}</div>
 
       <div>
         <h3 className="text-base text-ink">

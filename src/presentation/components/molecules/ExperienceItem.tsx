@@ -20,7 +20,7 @@ export function ExperienceItem({ experience, skills }: ExperienceItemProps) {
         className="absolute top-1.5 -left-[5px] h-2.5 w-2.5 rounded-full border border-signal bg-void"
       />
 
-      <p className="font-mono text-xs tracking-wide text-signal">
+      <p className="data text-signal">
         {formatPeriod(experience.period, locale, t.present)}
       </p>
 

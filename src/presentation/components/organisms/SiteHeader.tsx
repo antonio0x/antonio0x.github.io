@@ -30,7 +30,7 @@ export function SiteHeader({ displayName, headline, onToggleLocale, locale }: Si
           onClick={onToggleLocale}
           aria-label={t.localeSwitchLabel}
           lang={locale === 'es' ? 'en' : 'es'}
-          className="shrink-0 rounded-lg border border-line px-3 py-1.5 font-mono text-xs tracking-wide text-ink-muted transition-colors duration-200 hover:border-signal-dim hover:text-signal"
+          className="shrink-0 rounded-lg border border-line px-3 py-1.5 label text-ink-muted transition-colors duration-200 hover:border-signal-dim hover:text-signal"
         >
           {t.switchTo}
         </button>

@@ -8,7 +8,7 @@ export function EducationItem({ education }: { education: Education }) {
 
   return (
     <li className="rounded-xl border border-line bg-surface/85 p-5">
-      <p className="font-mono text-xs tracking-wide text-signal">
+      <p className="data text-signal">
         {formatPeriod(education.period, locale, t.present)}
       </p>
 

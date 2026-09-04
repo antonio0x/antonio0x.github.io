@@ -18,7 +18,7 @@ export function Tag({
 }) {
   return (
     <span
-      className={`inline-flex items-center rounded-full border px-2.5 py-0.5 font-mono text-[0.7rem] tracking-wide ${TONE_CLASS[tone]}`}
+      className={`inline-flex items-center rounded-full border px-2.5 py-0.5 label text-[0.7rem] ${TONE_CLASS[tone]}`}
     >
       {children}
     </span>

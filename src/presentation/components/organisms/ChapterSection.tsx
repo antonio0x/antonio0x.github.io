@@ -30,7 +30,7 @@ export function ChapterSection({ chapter, children, variant = 'standard' }: Chap
       }
     >
       <div className="mx-auto w-full max-w-6xl">
-        <div className="max-w-2xl">
+        <div className="max-w-3xl">
           <Eyebrow>{chapter.eyebrow}</Eyebrow>
 
           <h2
@@ -41,7 +41,7 @@ export function ChapterSection({ chapter, children, variant = 'standard' }: Chap
           </h2>
 
           {chapter.body.length > 0 && (
-            <p className="mt-6 text-lg leading-relaxed text-ink-muted">{chapter.body}</p>
+            <p className="lead mt-6">{chapter.body}</p>
           )}
         </div>
 

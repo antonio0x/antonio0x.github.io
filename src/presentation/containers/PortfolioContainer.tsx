@@ -23,7 +23,7 @@ export function PortfolioContainer() {
       <div
         role="status"
         aria-live="polite"
-        className="flex min-h-[100svh] items-center justify-center font-mono text-xs tracking-[0.2em] text-ink-faint"
+        className="flex min-h-[100svh] items-center justify-center label tracking-[0.2em] text-ink-faint"
       >
         <span className="sr-only">Loading</span>
         <span aria-hidden="true">· · ·</span>

@@ -34,7 +34,7 @@ export function ProjectCard({ project, skills }: ProjectCardProps) {
       <p className="mt-1 text-sm text-signal">{project.tagline}</p>
 
       {repo !== null && (
-        <p className="mt-3 font-mono text-xs tracking-wide text-ink-faint">
+        <p className="mt-3 data text-ink-faint">
           <span aria-hidden="true">◇ </span>
           {repo}
         </p>

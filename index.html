@@ -28,6 +28,20 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <!--
+      The display face is the first thing a visitor reads, so it is fetched in
+      parallel with the stylesheet instead of waiting to be discovered inside it.
+      Only the Latin subset is preloaded: Spanish and English never reach for
+      Latin Extended, and the mono is small and arrives below the fold.
+    -->
+    <link
+      rel="preload"
+      href="/fonts/archivo-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!--
       Structured data. Search engines read this even though the visual layer is
       a WebGL canvas — one more reason the content lives in the DOM.
     -->
@@ -62,7 +76,7 @@
   <body>
     <div id="root"></div>
     <noscript>
-      <p style="padding: 2rem; color: #e9eff8; font-family: system-ui, sans-serif">
+      <p style="padding: 2rem; color: #e9eff8; font-family: Archivo, system-ui, sans-serif">
         Este portafolio funciona sin JavaScript en su versión de texto, pero necesita JavaScript
         para el recorrido completo. Podés escribirme a
         <a href="mailto:rantonioquin@gmail.com" style="color: #45e3c0"

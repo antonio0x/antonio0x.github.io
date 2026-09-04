@@ -22,7 +22,7 @@ export function HeroMeta({ location, headline, experience, portrait }: HeroMetaP
         </div>
       )}
 
-      <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 font-mono text-xs tracking-wide text-ink-faint">
+      <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm text-ink-faint">
         <div>
           <dt className="sr-only">{t.siteRole}</dt>
           <dd className="text-ink-muted">{headline}</dd>
@@ -30,7 +30,7 @@ export function HeroMeta({ location, headline, experience, portrait }: HeroMetaP
         <div>
           <dt className="sr-only">{t.experienceLabel}</dt>
           <dd className="text-ink-muted">
-            {experience} {t.experienceLabel}
+            <span className="data">{experience}</span> {t.experienceLabel}
           </dd>
         </div>
         <div>
@@ -39,7 +39,7 @@ export function HeroMeta({ location, headline, experience, portrait }: HeroMetaP
         </div>
       </dl>
 
-      <p aria-hidden="true" className="mt-16 font-mono text-xs tracking-[0.2em] text-signal">
+      <p aria-hidden="true" className="mt-16 label tracking-[0.2em] text-signal">
         ↓ {t.scrollHint}
       </p>
     </>
